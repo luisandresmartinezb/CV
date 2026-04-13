@@ -11,24 +11,25 @@
 </head>
 <body>
   <div class="toolbar no-print">
-    <button onclick="window.print()">Imprimir / Guardar PDF</button>
+    <button type="button" id="themeToggle">🌙 Modo oscuro</button>
+    <button type="button" onclick="window.print()">Imprimir / Guardar PDF</button>
   </div>
 
   <article class="cv-page">
     <header class="header">
       <div class="header-main">
+        <p class="europass-kicker">Curriculum Vitae · Formato Europass</p>
         <h1>Luis Andrés Martínez Berraquero</h1>
         <p class="subtitle">Técnico Programador con enfoque Full Stack</p>
       </div>
 
       <div class="header-contact">
-        <div>Madrid, España</div>
-        <div>643 903 560</div>
-        <div><a href="mailto:luisandresmartinezb@gmail.com">luisandresmartinezb@gmail.com</a></div>
-        <div><a href="https://www.linkedin.com/in/luis-andr%C3%A9s-martinez-berraquero/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
-        <div><a href="https://github.com/luisandresmartinezb" target="_blank" rel="noopener noreferrer">GitHub</a></div>
-         <div><strong>Permiso de conducir:</strong> B</div>
-
+        <div class="contact-item"><span class="contact-label">Ubicación:</span> <span class="contact-value">Madrid, España</span></div>
+        <div class="contact-item"><span class="contact-label">Teléfono:</span> <span class="contact-value">643 903 560</span></div>
+        <div class="contact-item"><span class="contact-label">Email:</span> <a href="mailto:luisandresmartinezb@gmail.com">luisandresmartinezb@gmail.com</a></div>
+        <div class="contact-item"><span class="contact-label">LinkedIn:</span> <a href="https://www.linkedin.com/in/luis-andr%C3%A9s-martinez-berraquero/" target="_blank" rel="noopener noreferrer">Perfil profesional</a></div>
+        <div class="contact-item"><span class="contact-label">GitHub:</span> <a href="https://github.com/luisandresmartinezb" target="_blank" rel="noopener noreferrer">Repositorio</a></div>
+        <div class="contact-item"><span class="contact-label">Permiso:</span> <span class="contact-value">B</span></div>
       </div>
     </header>
 
@@ -56,7 +57,7 @@
 
     <section class="content">
       <main class="left-col">
-        <section class="panel">
+        <section class="panel section-block">
           <h2>Experiencia profesional</h2>
 
           <article class="job">
@@ -203,44 +204,39 @@
         </section>
       </main>
 
-      <aside class="right-col"><section class="panel">
+      <aside class="right-col">
+        <section class="panel section-block side-accent">
           <h2>Formación</h2>
           <ul class="info-list">
             <li><strong>09/2025 – Actualidad</strong><br>Máster en Arquitectura Cloud · Colegio Tajamar</li>
             <li><strong>09/2024 – Actualidad</strong><br>CFGS Desarrollo de Aplicaciones Web · FP PRO</li>
             <li><strong>09/2019 – 06/2020</strong><br>Máster Privado en Java · Grupo Atrium</li>
-            <li><strong>09/2016 – 06/2018</strong><br>CFGS DAM · Colegio Retamar</li>
-            <li><strong>09/2014 – 06/2016</strong><br>CFGS ASIR · Colegio Retamar</li>
+            <li><strong>09/2016 – 06/2018</strong><br><a href="grado-dam.pdf" target="_blank" rel="noopener noreferrer">CFGS DAM · Colegio Retamar</a></li>
+            <li><strong>09/2014 – 06/2016</strong><br><a href="grado-asir.pdf" target="_blank" rel="noopener noreferrer">CFGS ASIR · Colegio Retamar</a></li>
           </ul>
         </section>
-        <section class="panel">
+        <section class="panel section-block side-accent">
           <h2>Aptitudes</h2>
           <p class="aptitudes">
             Creatividad · Trabajo en equipo · Habilidades comunicativas · Habilidades sociales ·
             Productividad · Proactividad · Resolución de problemas
           </p>
         </section>
-        <section class="panel">
+        <section class="panel section-block side-accent">
           <h2>Idiomas</h2>
           <ul class="info-list compact">
             <li><strong>Castellano:</strong> Nativo</li>
             <li><strong>Inglés:</strong> A2</li>
           </ul>
         </section>
-        <section class="panel">
+        <section class="panel section-block side-accent">
           <h2>Certificados</h2>
-          <ul class="info-list compact">
-            <li>Curso E-Learning para tutores Online · 2020</li>
-            <li>Certificado CyberArk Trustee · 2019</li>
-            <li>Curso Java · Politécnico Colombia</li>
-            <li>Curso PHP · Politécnico Colombia</li>
-            <li>Curso Udemy de C++ · 2019</li>
-            <li>Curso Udemy de GitHub · 2019</li>
-            <li>Curso de .NET Core en Udemy · 2021</li>
-            <li>Curso de Bases de Datos y Procedimientos Almacenados · Udemy</li>
+          <ul class="info-list compact certificates-list">
+            <li><a href="tutor-e-learning.pdf" target="_blank" rel="noopener noreferrer">Curso E-Learning para tutores Online · 2020</a></li>
+            <li><a href="certificacion-cyberark.pdf" target="_blank" rel="noopener noreferrer">Certificado CyberArk Trustee · 2019</a></li>
           </ul>
         </section>
-        <section class="panel">
+        <section class="panel section-block side-accent">
           <h2>Conocimientos</h2>
 
           <div class="skill-block">
@@ -250,12 +246,12 @@
 
           <div class="skill-block">
             <h3 class="skill-title">Lenguajes de programación</h3>
-            <p>Java · Python · C# · JavaScript · VBA · C++ · Groovy</p>
+            <p>Java · C# · JavaScript · HTML · CSS · PL/SQL · Groovy</p>
           </div>
 
           <div class="skill-block">
             <h3 class="skill-title">Bases de datos</h3>
-            <p>PostgreSQL · Oracle · MySQL · SQL Server · Microsoft Access · PL/SQL</p>
+            <p>MySQL · SQL Server · PostgreSQL · Oracle · Microsoft Access</p>
           </div>
 
           <div class="skill-block">
@@ -264,20 +260,16 @@
           </div>
 
           <div class="skill-block">
-            <h3 class="skill-title">Testing / QA</h3>
-            <p>JMeter · Postman · Insomnia · JUnit</p>
-          </div>
-
-          <div class="skill-block">
-            <h3 class="skill-title">Sistemas / DevOps</h3>
-            <p>Linux · Windows Server · VMware · Active Directory · Git / GitHub · Figma</p>
+            <h3 class="skill-title">Tiempo y diseño</h3>
+            <p>Jira · Trello · Microsoft Project · Microsoft Teams</p>
           </div>
 
           <div class="skill-block last-block">
-            <h3 class="skill-title">Herramientas de gestión</h3>
-            <p>Trello · Microsoft Project · Microsoft Teams</p>
+            <h3 class="skill-title">Sistemas / DevOps</h3>
+            <p>Linux · Windows Server · VMware · Active Directory · Git · GitHub · Figma</p>
           </div>
-        </section></aside>
+        </section>
+      </aside>
     </section>
   </article>
 
